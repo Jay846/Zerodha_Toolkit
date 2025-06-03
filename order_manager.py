@@ -19,3 +19,20 @@ def place_order(symbol, qty, transaction_type, order_type="MARKET", product="CNC
         print(f"Order placed: {order}")
     except Exception as e:
         print(f"Order placement failed: {e}")
+
+
+Modify order
+kite.modify_order(variety=kite.VARIETY_REGULAR,
+                  order_id="order_id",
+                  parent_order_id=None,
+                  quantity=5,
+                  price=200,
+                  order_type=kite.ORDER_TYPE_LIMIT,
+                  trigger_price=None,
+                  validity=kite.VALIDITY_DAY,
+                  disclosed_quantity=None)
+
+Cancel order
+kite.cancel_order(variety=kite.VARIETY_REGULAR,
+                  order_id="order_id",
+                  parent_order_id=None)
