@@ -1,0 +1,4 @@
+kiteconnect
+kite_trade
+python-dotenv
+pandas
